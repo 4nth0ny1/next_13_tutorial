@@ -17,7 +17,7 @@ async function fetchRepos() {
 
 const ReposPage = async () => {
   const repos = await fetchRepos();
-  console.log(repos[0]); // since this is a server component, this console.log() will not show up in the client (browser), it will show up in the terminal.
+  //   console.log(repos[0]); // since this is a server component, this console.log() will not show up in the client (browser), it will show up in the terminal.
 
   return (
     <div className="repos-container">

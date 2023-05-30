@@ -1,12 +1,12 @@
 import React from "react";
+import Repo from "../../../components/Repo";
 
 const RepoDetailPage = ({ params }) => {
-  console.log(params);
   const { name } = params;
+
   return (
     <div className="card">
-      <h2>{name}</h2>
-      <p>Repo Details</p>
+      <Repo name={name} />
     </div>
   );
 };
