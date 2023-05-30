@@ -2,9 +2,12 @@ import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
 
 async function fetchRepos() {
-  const response = await fetch("https://api.github.com/users/4nth0ny1/repos", {
-    next: { revalidate: 60 },
-  });
+  const response = await fetch(
+    "https://api.github.com/users/4nth0ny1/repos?page=1&per_page=100",
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   await new Promise((resolve) => setTimeout(resolve, 1000)); // wait 1 second for the loading.jsx spinner to show
 
