@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
       <h1 className="text-3xl">Next13 Tutorial</h1>
-      <ul>
+      <ul className="">
         <Link href="/about">
           <li>about</li>
         </Link>
