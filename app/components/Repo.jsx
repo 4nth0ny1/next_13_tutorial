@@ -16,7 +16,7 @@ async function fetchRepo(name) {
 
 const Repo = async ({ name }) => {
   const repo = await fetchRepo(name);
-  console.log(repo);
+
   return (
     <>
       <h2>{repo.name}</h2>
